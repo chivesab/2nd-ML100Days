@@ -1,0 +1,14 @@
+我選的dataset主題是『Click-Through Rate Prediction』
+（網址：https://www.kaggle.com/c/avazu-ctr-prediction/data）
+
+Q1: 你選的這組資料為何重要？
+A1: 在廣告推薦領域，我們需要去預測用戶會不會點擊我們推播給他的廣告，以達到讓用戶點擊率最高的目的（同時還要參考轉換率）。現今社會社群媒體大部分收益都來自於廣告，廣告也會深深影響使用者體驗，所以用好的演算法來預測CTR是一件很重要的事情。
+
+Q2: 資料從何而來（譬如提供者是誰、以什麼方式搜集）
+A2: 這次的資料是由Avazu（一家上海物聯網公司）所提供，共11天的資料。前十天的資料屬於training data, 希望可以預測第十一天資料的CTR。
+
+Q3：資料的形態為何？
+A3: 這次資料提供的檔案為csv檔，分成train.csv和test.csv. 欄位有16個，分別為id, click, hour, C1(anonumized categorical variable), banner_pos, site_id, site_category, app_id, app_domain, app_category, device_id, device_ip, device_model, device_conn_type.
+
+Q4: 這組資料想解決的問題如何評估？
+A3: Logloss越低越好，根據LearderBoard, 大概介於0.379~0.388之間.
